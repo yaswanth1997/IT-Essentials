@@ -1,2 +1,4 @@
 # IT-Essentials
-Required IT services as a Software Engineer
+LINUX COMMANDS 07/9/2023
+LINUX COMMANDS 07/10/2023
+Power BI modules 07/11/2023
