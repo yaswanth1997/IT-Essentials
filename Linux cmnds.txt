@@ -1,0 +1,200 @@
+Here are the commands and descriptions for various operations in Linux:
+
+System Information:
+- hostname: Show system hostname
+- last reboot: Show system reboot history
+- date: Display today's date
+- cal: Display the month's calendar
+- w: Display who is online
+- whoami: Display who you are logged in as
+- last: Display the last users who logged onto the system
+- who: Show who is logged into the system
+- logout: Logging out
+- reboot: Reboot system
+- poweroff: Shutdown the system
+
+Files and Directories:
+- cat: Concatenate and print data
+- cd: Change current directory
+- chgrp: Change file group
+- chown: Change the owner of a file or directory
+- ls: List and generate statistics for files
+- chmod: Change file mode
+- mkdir: Make a new directory
+- cp: Copy file data
+- more, page: Display file data at your terminal
+- file: Determine file type
+- mv: Move or rename files
+- find: Find files
+- locate: Locate a file in cached memory
+- pwd: Print working directory
+- grep: Search file for a regular expression
+- rm, rmdir: Remove (unlink) files or directories
+- head: Give the first few lines
+- tail: Print the last lines from a file
+- just: Text justification program
+- touch: Update access and modification times of a file
+
+File Editors:
+- ex, edit: Line editor
+- vi, vim: Standard text editor
+
+Manipulating Data:
+- awk: Pattern scanning and processing language
+- perl: Data manipulation language
+- cmp: Compare the contents of two files
+- paste: Merge file data
+- comm: Compare sorted data
+- sed: Stream text editor
+- cut: Cut out selected fields of each line of a file
+- sort: Sort file data
+- diff: Differential file comparator
+- split: Split file into smaller files
+- expand, unexpand: Expand tabs to spaces, and vice versa
+- tr: Translate characters
+- gawk: Pattern scanning and processing language
+- uniq: Report repeated lines in a file
+- join: Join files on some common field
+- look: Find lines in sorted data
+- wc: Count words, lines, and characters
+
+Compressed Files:
+- gzip: Compress files
+- uncompress: Uncompress files
+- zcat: Cat a compressed file
+- gunzip: Uncompress gzipped files
+- zcmp, zdiff: Compare compressed files
+
+Status:
+- ps: Print process status statistics
+- date: Print the date
+- quota -v: Display disk usage and limits
+- reset: Reset terminal mode
+- du: Print amount of disk usage
+- script: Keep a script of terminal session
+- stty: Set terminal options
+- groups: Show group memberships
+- time: Time a command
+- homequota: Show quota and file usage
+- iostat: Report I/O statistics
+- tty: Print current terminal name
+- kill: Send a signal to a process
+- uptime: Display system status
+- last: Show last logins of users
+- users: Print names of logged-in users
+- lun: List user names or login ID
+- vmstat: Report virtual memory statistics
+- netstat: Show network status
+- w: Show what logged-in users are doing
+- who: List logged-in users
+- printenv: Display the value of a shell variable
+
+Messages between Users:
+- write: Send a message to another local user
+- wall: Send a message to all local users
+- pine: VDU-based mail utility
+- mail: Simple send or read mail program
+- thunderbird: GUI mail handling tool on Linux
+
+Networking:
+- ftp: File transfer program
+- tftp: Trivial file transfer program
+- sftp: Secure shell file transfer program
+- rcp: Remote file copy
+- scp: Secure shell remote file copy
+- wget: Non-interactive network downloader
+- telnet: Make a terminal connection to another host
+- ssh: Secure shell terminal or command connection
+- rlogin: Remote login to a Linux host
+- rsh: Remote shell
+- curl: Transfer data from a URL
+- firefox: Web browser
+- google-chrome: Web browser
+
+Programming:
+- make: Maintain groups of programs
+- size: Print program's sizes
+- nm: Print program's name list
+- strip: Remove symbol table and relocation bits
+
+C:
+- cb: C program beautifier
+- gcc: GNU ANSI C Compiler
+- ctrace: C program debugger
+- indent: Indent and format C program source
+- cxref: Generate C program cross-reference
+
+C++:
+- g++: GNU C++ Compiler
+
+Java:
+- appletviewer: Java applet viewer
+- javac: Java compiler
+- eclipse: Java integrated development environment on Linux
+
+Fortran:
+- f95: GNU Fortran 95 compiler
+
+Other Languages:
+- bc: Interactive arithmetic language processor
+- matlab: Maths package
+- gcl: GNU Common Lisp
+- perl: General-purpose language
+- python: Object-oriented programming language
+- squeak: Smalltalk
+- php: Web page embedded language
+- mathematica: Symbolic maths package
+- asp: Web page embedded language
+
+Text Processing:
+- fmt: Simple text formatter
+- acroread: PDF viewer
+- spell: Check text for spelling errors
+- aspell: Interactive spelling checker
+
+TeX:
+- tex: Text formatting and typesetting
+- latex: LaTeX formatter
+- pdflatex: LaTeX formatter with PDF output
+
+Word Processing:
+- libreoffice: Start LibreOffice applications
+
+Database Management:
+- sqlplus: Run the Oracle SQL interpreter
+- mysql: Run the MySQL SQL interpreter
+- sqldeveloper: Oracle SQL Developer GUI interface
+- mysql-workbench: GUI interface for MySQL
+
+Download Online File:
+- Wget http://domain.com/file: Download http://domain.com/file
+
+Installing Packages:
+- yum search keyword: Search for a package by keyword
+- yum install package: Install package
+- yum info package: Display description and summary information about the package
+- yum remove package: Remove/uninstall package
+
+Make:
+- Focus on advanced use of the Make command. Useful for debugging and executing a program with multiple files simultaneously.
+
+Search:
+- Grep pattern file: Search for a pattern in a file
+- Grep -r pattern directory: Search recursively for a pattern in a directory
+- Locate name: Find files and directories by name
+- Find /home -size +100M: Find files larger than 100MB in /home
+
+SSH Logins:
+- ssh host: Connect to a host as your local username
+- user@host: Connect to a host as a user
+- ssh -p port user@host: Connect to a host using a specific port
+
+Disk Usage:
+- df -h: Show free and used space on mounted filesystems
+- df -i: Show free and used inodes on mounted filesystems
+- fdisk -l: Display disk partition sizes and types
+- du -ah: Display disk usage for all files and directories in human-readable format
+- du -sh: Display total disk usage of the current directory
+
+Directory Navigation:
+- cd ..: Go up one level of the directory tree (change into the parent directory)
