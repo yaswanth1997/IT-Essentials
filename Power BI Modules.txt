@@ -1,0 +1,21 @@
+Power BI Modules:
+1. Prepare data for analysis: This module covers techniques for preparing data in Power BI before conducting analysis. It includes connecting to data sources, transforming and shaping data using Power Query Editor, handling data quality issues, and creating calculated columns and measures.
+
+2. Consume data with Power BI: This module focuses on consuming data in Power BI to create interactive reports and dashboards. It covers topics such as importing data from various sources, creating relationships between tables, using data visualization tools, applying filters and slicers, and publishing reports for sharing.
+
+3. Model data in Power BI: This module explores the process of modeling data in Power BI to create efficient and optimized data models. It covers topics like creating star and snowflake schemas, managing relationships, implementing row-level security, using calculated tables, and understanding the importance of data modeling for performance.
+
+4. Visualize data in Power BI: This module delves into the visualization capabilities of Power BI to create compelling and insightful visuals. It covers topics such as choosing appropriate visualizations, customizing visual properties, using themes and templates, creating hierarchies, and incorporating advanced visuals like maps and custom visuals.
+
+5. Create and use analytics reports with Power BI: This module focuses on creating advanced analytics reports in Power BI by utilizing features like Power Query, Power Pivot, and Power View. It covers techniques for data exploration, advanced calculations and aggregations, creating data models, and building interactive reports with drill-through and drill-down capabilities.
+
+6. Get started with Microsoft data analytics: This module provides an introduction to data analytics using Microsoft tools and technologies. It covers an overview of data analytics concepts, understanding data sources and data types, and an introduction to the Microsoft data analytics stack, including Power BI, Azure Data Lake, Azure Synapse Analytics, and Azure Machine Learning.
+
+7. Use DAX in Power BI Desktop: This module focuses on using the Data Analysis Expressions (DAX) language in Power BI Desktop. It covers the basics of DAX, including syntax and functions, creating calculated columns and measures, using DAX formulas in calculated tables, and implementing complex calculations and calculations with time intelligence.
+
+8. Manage workspaces and datasets in Power BI: This module covers the administration and management aspects of Power BI, including managing workspaces, creating and sharing datasets, setting up data refresh schedules, configuring security and access permissions, and managing dataflows and data gateways.
+
+9. Data analysis in Power BI: This module explores advanced data analysis techniques in Power BI. It covers topics such as using advanced filtering and querying options, implementing advanced analytics features like forecasting and clustering, performing statistical analysis, using advanced data modeling techniques, and working with advanced data visualization techniques.
+
+Data Warehousing:
+Data Warehousing for Business Intelligence: This module provides an overview of data warehousing concepts and its role in supporting business intelligence (BI). It covers topics like data warehousing architecture, dimensional modeling, ETL (Extract, Transform, Load) processes, data integration, data quality, and data governance. It also explores the benefits and challenges of data warehousing for BI initiatives and discusses best practices for designing and implementing a data warehouse.
