@@ -1,0 +1,47 @@
+Git commands:
+
+1. `git init`: Initializes a new Git repository in the current directory.
+2. `git clone <repository_url>`: Creates a copy of a remote repository on your local machine.
+3. `git add <file>`: Adds a file to the staging area.
+4. `git add .`: Adds all modified and new files to the staging area.
+5. `git commit -m "Commit message"`: Records changes to the repository with a commit message.
+6. `git status`: Shows the status of files in the repository.
+7. `git diff`: Displays the differences between the current state and the last commit.
+8. `git branch`: Lists all branches in the repository.
+9. `git branch <branch_name>`: Creates a new branch.
+10. `git checkout <branch_name>`: Switches to the specified branch.
+11. `git merge <branch_name>`: Merges changes from the specified branch into the current branch.
+12. `git pull`: Fetches changes from a remote repository and merges them into the current branch.
+13. `git push`: Uploads local branch commits to a remote repository.
+14. `git remote`: Lists remote repositories.
+15. `git remote add <remote_name> <repository_url>`: Adds a new remote repository.
+16. `git log`: Displays the commit history.
+17. `git reset`: Unstages changes in the current branch.
+18. `git revert`: Reverts one or more commits.
+19. `git stash`: Temporarily saves changes that are not ready to be committed.
+20. `git tag`: Lists tags (annotated or lightweight) in the repository.
+21. `git show <tag/commit>`: Displays the details of a specific tag or commit.
+22. `git rm <file>`: Removes a file from the repository and the working directory.
+23. `git fetch`: Downloads the latest changes from a remote repository without merging them.
+24. `git remote -v`: Shows the URLs of remote repositories.
+25. `git push <remote_name> <branch_name>`: Pushes commits to a specific remote branch.
+26. `git pull <remote_name> <branch_name>`: Fetches changes from a specific remote branch and merges them into the current branch.
+27. `git remote rename <old_name> <new_name>`: Renames a remote repository.
+28. `git remote remove <remote_name>`: Removes a remote repository from the list of remotes.
+29. `git branch -d <branch_name>`: Deletes a branch (only if all changes are merged).
+30. `git branch -D <branch_name>`: Forces deletion of a branch (even if changes are not merged).
+31. `git checkout -b <new_branch>`: Creates and switches to a new branch in one command.
+32. `git log --oneline`: Displays a simplified commit history.
+33. `git log --author=<author_name>`: Shows commits made by a specific author.
+34. `git reset --hard <commit>`: Discards all changes and resets the repository to a specific commit.
+35. `git reset --soft <commit>`: Resets the repository to a specific commit but keeps the changes staged.
+36. `git clean -n`: Shows a list of untracked files that will be removed with the `git clean -f` command.
+37. `git cherry-pick <commit>`: Applies the changes of a specific commit to the current branch.
+38. `git rebase <branch_name>`: Transfers commits from one branch to another by moving, modifying, or combining them.
+39. `git tag <tag_name> <commit>`: Creates a lightweight tag at a specific commit.
+40. `git tag -a <tag_name> -m "Tag message"`: Creates an annotated tag with a message.
+41. `git show-branch`: Displays the branch structure and their commits.
+42. `git config --global user.name "Your Name"`: Sets the name associated with your Git commits.
+43. `git config --global user.email "your@example.com"`: Sets the email associated with your Git commits.
+44. `git blame <file>`: Displays the commit and author information for each line in a file.
+
