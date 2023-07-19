@@ -279,3 +279,144 @@ COMMIT;
 ```
 
 These examples cover various SQL operations, from basic CRUD (Create, Read, Update, Delete) operations to advanced concepts like joins, aggregation, views, indexes, and transactions. SQL is a versatile language that allows users to interact with databases effectively, making it an essential tool for managing and analyzing data in the modern world.
+
+==========================================================================================
+
+
+1. Creating the Database and Tables:
+Let's start by creating the database and the necessary tables.
+
+```sql
+CREATE DATABASE ECommerceDB;
+
+USE ECommerceDB;
+
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100)
+);
+
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Price DECIMAL(10, 2)
+);
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    TotalAmount DECIMAL(10, 2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+CREATE TABLE OrderItems (
+    OrderItemID INT PRIMARY KEY,
+    OrderID INT,
+    ProductID INT,
+    Quantity INT,
+    Subtotal DECIMAL(10, 2),
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+```
+
+2. Inserting Sample Data:
+Now, let's populate the tables with some sample data.
+
+```sql
+INSERT INTO Customers (CustomerID, FirstName, LastName, Email)
+VALUES
+    (1, 'John', 'Doe', 'john.doe@example.com'),
+    (2, 'Jane', 'Smith', 'jane.smith@example.com'),
+    (3, 'Mike', 'Johnson', 'mike.johnson@example.com');
+
+INSERT INTO Products (ProductID, ProductName, Price)
+VALUES
+    (101, 'Laptop', 899.99),
+    (102, 'Smartphone', 599.99),
+    (103, 'Tablet', 349.99);
+
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount)
+VALUES
+    (1001, 1, '2023-07-01', 1499.98),
+    (1002, 2, '2023-07-02', 949.98),
+    (1003, 3, '2023-07-03', 1749.97);
+
+INSERT INTO OrderItems (OrderItemID, OrderID, ProductID, Quantity, Subtotal)
+VALUES
+    (2001, 1001, 101, 2, 1799.98),
+    (2002, 1002, 102, 1, 599.99),
+    (2003, 1003, 101, 1, 899.99),
+    (2004, 1003, 103, 2, 699.98);
+```
+
+3. Running Queries:
+With the data in place, let's run some sample SQL queries to explore the database.
+
+a. Retrieve all customers:
+
+```sql
+SELECT * FROM Customers;
+```
+
+b. Retrieve all products:
+
+```sql
+SELECT * FROM Products;
+```
+
+c. Retrieve all orders:
+
+```sql
+SELECT * FROM Orders;
+```
+
+d. Retrieve all order items:
+
+```sql
+SELECT * FROM OrderItems;
+```
+
+e. Retrieve customer information along with their order history:
+
+```sql
+SELECT Customers.CustomerID, FirstName, LastName, Email, Orders.OrderID, OrderDate, TotalAmount
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+```
+
+f. Calculate the total sales for each product:
+
+```sql
+SELECT Products.ProductID, ProductName, SUM(Subtotal) AS TotalSales
+FROM Products
+LEFT JOIN OrderItems ON Products.ProductID = OrderItems.ProductID
+GROUP BY Products.ProductID, ProductName;
+```
+
+g. Find the highest and lowest order totals:
+
+```sql
+SELECT MAX(TotalAmount) AS HighestOrderTotal, MIN(TotalAmount) AS LowestOrderTotal
+FROM Orders;
+```
+
+h. Update the price of the 'Tablet' product:
+
+```sql
+UPDATE Products
+SET Price = 299.99
+WHERE ProductName = 'Tablet';
+```
+
+i. Delete the order item with OrderItemID 2003:
+
+```sql
+DELETE FROM OrderItems
+WHERE OrderItemID = 2003;
+```
+
+These queries showcase a variety of SQL operations on the sample database, including data retrieval, filtering, joins, aggregations, updates, and deletions. SQL is a versatile language that enables users to perform complex data manipulations and analysis efficiently on large datasets.
